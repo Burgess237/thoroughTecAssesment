@@ -1,0 +1,14 @@
+.form-container {
+    padding: 1em;
+    mat-card {
+        padding: 1em;
+    }
+}
+
+.horizontal-form {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: stretch;
+}

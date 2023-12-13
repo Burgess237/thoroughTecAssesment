@@ -1,0 +1,18 @@
+<div class="form-container">
+  <mat-card class="mat-elevation-z4">
+    <form [formGroup]="toDoForm" class="horizontal-form">
+      <mat-form-field>
+        <mat-label>Header</mat-label>
+        <input formControlName="header" matInput>
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Description</mat-label>
+        <input formControlName="description" matInput>
+      </mat-form-field>
+
+    </form>
+    <button mat-flat-button color="primary" (click)="submitForm()">Add<mat-icon>add</mat-icon></button>
+
+
+  </mat-card>
+</div>

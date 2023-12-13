@@ -1,0 +1,9 @@
+<div class="container">
+  <app-to-do-form (submit)="saveToDo($event)"></app-to-do-form>
+
+  <div class="list" *ngIf="(filteredToDo$ | async)[0] !== null">
+    <app-to-do *ngFor="let i of (filteredToDo$ | async)" [toDo]="i" (onComplete)="completeToDo($event)"
+      (onEdit)="editToDo($event)"></app-to-do>
+
+  </div>
+</div>
